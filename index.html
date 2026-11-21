@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>কুমিল্লা জিলা স্কুল | Comilla Zilla School (স্থাপিত: ১৮৩৭) - EIIN: 105770</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Hind Siliguri & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            czs: {
+              navy: '#061325',
+              dark: '#0B1D3A',
+              card: '#11294D',
+              gold: '#D97706',
+              goldLight: '#F59E0B',
+              maroon: '#881337',
+              accent: '#38BDF8'
+            }
+          },
+          fontFamily: {
+            bengali: ['"Hind Siliguri"', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', '"Hind Siliguri"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { font-family: 'Hind Siliguri', 'Plus Jakarta Sans', sans-serif; background-color: #061325; color: #F8FAFC; }
+    .glass-nav { background: rgba(6, 19, 37, 0.92); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
+    .glass-card { background: rgba(17, 41, 77, 0.65); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); transition: all 0.3s ease; }
+    .glass-card:hover { border-color: #F59E0B; transform: translateY(-3px); box-shadow: 0 12px 30px -10px rgba(217, 119, 6, 0.25); }
+    .badge-gold { background: linear-gradient(135deg, #F59E0B, #B45309); color: #000; font-weight: 700; }
+    .hero-gradient { background: radial-gradient(circle at 50% 20%, rgba(217, 119, 6, 0.15) 0%, rgba(6, 19, 37, 0.95) 75%); }
+  </style>
+</head>
+<body class="selection:bg-amber-500 selection:text-black">
+
+  <!-- Top Institutional Bar -->
+  <div class="bg-gradient-to-r from-czs-maroon via-czs-dark to-czs-navy border-b border-white/10 text-xs py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-4 text-slate-300">
+        <span class="flex items-center gap-1.5 font-medium"><span class="text-amber-400">🏛️</span> EIIN: <strong class="text-white">105770</strong></span>
+        <span class="hidden sm:inline text-slate-600">|</span>
+        <span class="hidden sm:flex items-center gap-1.5"><span class="text-amber-400">📍</span> কান্দিরপাড়, কুমিল্লা সদর</span>
+        <span class="hidden md:inline text-slate-600">|</span>
+        <span class="hidden md:inline text-amber-300 font-semibold">প্রতিষ্ঠিত: ২০ জুলাই, ১৮৩৭ (১৮৭+ বছরের ঐতিহ্য)</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">
+          প্রভাতি ও দিবা শাখা
+        </span>
+        <a href="#result-checker" class="text-white bg-amber-600 hover:bg-amber-500 px-3 py-1 rounded text-[11px] font-bold transition">
+          ডিজিটাল ফলাফল
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <header class="sticky top-0 z-50 glass-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+      <!-- School Logo & Title -->
+      <a href="#" class="flex items-center gap-3.5 group">
+        <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-amber-600 to-amber-400 flex items-center justify-center p-0.5 shadow-lg shadow-amber-500/20">
+          <div class="w-full h-full rounded-full bg-czs-navy flex items-center justify-center text-amber-400 font-black text-xl tracking-tighter border border-amber-400/40">
+            CZS
+          </div>
+        </div>
+        <div>
+          <h1 class="text-xl font-bold tracking-tight text-white group-hover:text-amber-400 transition leading-tight">
+            কুমিল্লা জিলা স্কুল
+          </h1>
+          <p class="text-[11px] font-medium text-slate-400 tracking-wide">
+            COMILLA ZILLA SCHOOL • ESTD. 1837
+          </p>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-300">
+        <a href="#history" class="hover:text-amber-400 transition">পরিচিতি ও ইতিহাস</a>
+        <a href="#headmaster" class="hover:text-amber-400 transition">প্রধান শিক্ষক</a>
+        <a href="#notice" class="hover:text-amber-400 transition">নোটিশ বোর্ড</a>
+        <a href="#academics" class="hover:text-amber-400 transition">একাডেমিক</a>
+        <a href="#alumni" class="hover:text-amber-400 transition">কৃতি শিক্ষার্থী</a>
+        <a href="#clubs" class="hover:text-amber-400 transition">সহশিক্ষা</a>
+        <a href="#contact" class="hover:text-amber-400 transition">যোগাযোগ</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="flex items-center gap-2">
+        <a href="#portal" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-extrabold text-xs sm:text-sm px-4 py-2.5 rounded-lg shadow-md shadow-amber-500/20 transition">
+          শিক্ষার্থী পোর্টাল
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Live Scrolling Notification Ticker -->
+  <div class="bg-czs-dark/80 border-b border-white/5 py-2 px-4 overflow-hidden">
+    <div class="max-w-7xl mx-auto flex items-center gap-3">
+      <span class="bg-red-600 text-white font-bold text-[10px] sm:text-xs px-2.5 py-1 rounded shrink-0 uppercase tracking-wider animate-pulse">
+        জরুরি নোটিশ
+      </span>
+      <marquee class="text-xs sm:text-sm text-slate-200 font-medium" scrollamount="6">
+        📢 ২০২৬ শিক্ষাবর্ষের বার্ষিক পরীক্ষা ও শ্রেণি মূল্যায়ন সংক্রান্ত নির্দেশনা প্রকাশিত হয়েছে • এসএসসি ২০২৬ নির্বাচনী পরীক্ষায় কুমিল্লা জিলা স্কুলের শতভাগ উত্তীর্ণ ও সর্বোচ্চ জিপিএ-৫ অর্জন • স্কাউট ও বিএনসিসি ক্যাম্পিং রেজিস্ট্রেশন চলছে • সকল শিক্ষার্থীর ডিজিটাল আইডি কার্ড বিতরণ আগামী রবিবার থেকে শুরু হবে।
+      </marquee>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="relative hero-gradient pt-16 pb-24 px-4 sm:px-6 overflow-hidden">
+    <div class="max-w-5xl mx-auto text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold mb-6">
+        <span>✨</span> দেশের প্রাচীনতম ও শীর্ষস্থানীয় বিদ্যাপীঠ
+      </div>
+      <h2 class="text-3xl sm:text-5xl md:text-6xl font-black text-white tracking-tight leading-tight mb-6">
+        জ্ঞান, ঐতিহ্য ও সফলতার <br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-200 to-orange-400">
+          ১৮৭ বছরের গৌরবময় বাতিঘর
+        </span>
+      </h2>
+      <p class="text-slate-300 text-base sm:text-lg max-w-3xl mx-auto mb-10 leading-relaxed font-normal">
+        ১৮৩৭ সালের ২০ জুলাই হেনরি জর্জ লিসেস্টারের হাত ধরে প্রতিষ্ঠিত কুমিল্লা জিলা স্কুল আজ শতাব্দীর পর শতাব্দী ধরে মেধা, নেতৃত্ব ও দেশপ্রেমিক নাগরিক গঠনে বাংলাদেশের অনন্য পথিকৃৎ।
+      </p>
+
+      <!-- Key Stats Bar -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto mb-10">
+        <div class="glass-card p-4 rounded-xl text-center">
+          <div class="text-2xl sm:text-3xl font-extrabold text-amber-400">১৮৩৭</div>
+          <div class="text-xs text-slate-400 font-semibold mt-1">প্রতিষ্ঠার সন</div>
+        </div>
+        <div class="glass-card p-4 rounded-xl text-center">
+          <div class="text-2xl sm:text-3xl font-extrabold text-sky-400">১০০%</div>
+          <div class="text-xs text-slate-400 font-semibold mt-1">এসএসসি পাসের হার</div>
+        </div>
+        <div class="glass-card p-4 rounded-xl text-center">
+          <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400">২০০০+</div>
+          <div class="text-xs text-slate-400 font-semibold mt-1">মেধাবী শিক্ষার্থী</div>
+        </div>
+        <div class="glass-card p-4 rounded-xl text-center">
+          <div class="text-2xl sm:text-3xl font-extrabold text-purple-400">৫.৬৯</div>
+          <div class="text-xs text-slate-400 font-semibold mt-1">একর মনোরম ক্যাম্পাস</div>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a href="#notice" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-extrabold text-sm px-6 py-3.5 rounded-xl shadow-lg shadow-amber-500/25 transition">
+          অনলাইন নোটিশ দেখুন ➔
+        </a>
+        <a href="#history" class="glass-card hover:bg-white/10 text-white font-bold text-sm px-6 py-3.5 rounded-xl transition">
+          স্কুলের বিস্তারিত ইতিহাস
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Headmaster's Speech & Heritage Section -->
+  <section id="headmaster" class="py-16 px-4 sm:px-6 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+      <!-- Headmaster Card -->
+      <div class="glass-card p-6 rounded-2xl border-t-4 border-amber-500 text-center">
+        <div class="w-32 h-32 mx-auto rounded-2xl bg-gradient-to-tr from-slate-700 to-slate-900 border-2 border-amber-500/40 flex items-center justify-center text-4xl shadow-xl mb-4">
+          👨‍🏫
+        </div>
+        <h3 class="text-xl font-bold text-white">মোহাম্মদ আব্দুল হাফিজ</h3>
+        <p class="text-xs text-amber-400 font-semibold mb-3">প্রধান শিক্ষক • কুমিল্লা জিলা স্কুল</p>
+        <p class="text-xs text-slate-300 leading-relaxed italic text-justify">
+          "কুমিল্লা জিলা স্কুল কেবল একটি শিক্ষাপ্রতিষ্ঠান নয়, এটি একটি জীবন্ত ইতিহাস। আমাদের লক্ষ্য শুধু পুঁথিগত বিদ্যায় জিপিএ-৫ অর্জন নয়, বরং নৈতিক চরিত্র, মানবিক মূল্যবোধ ও বৈশ্বিক প্রতিযোগিতায় নেতৃত্ব দেওয়ার মতো যোগ্য নাগরিক গড়ে তোলা।"
+        </p>
+        <div class="mt-4 pt-4 border-t border-white/10 text-[11px] text-slate-400 font-medium">
+          যোগাযোগ: headmaster@czs.edu.bd
+        </div>
+      </div>
+
+      <!-- School Highlights & Overview -->
+      <div id="history" class="lg:col-span-2 space-y-6">
+        <div class="inline-block px-3 py-1 rounded bg-amber-500/10 text-amber-400 text-xs font-bold border border-amber-500/20">
+          ঐতিহাসিক গৌরবগাথা
+        </div>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-white leading-tight">
+          ১৮৩৭ সালের ৩ জন শিক্ষক ও ৩৭ জন ছাত্র থেকে আজকের জাতীয় শ্রেষ্ঠত্ব
+        </h3>
+        <p class="text-slate-300 text-sm leading-relaxed text-justify">
+          তৎকালীন ব্রিটিশ সরকারের শিক্ষা নীতির আওতায় ১৮৩৭ সালের ২০ জুলাই প্রতিষ্ঠিত হয় কুমিল্লা জিলা স্কুল। ১৮৫৭ সালে এটি কলকাতা বিশ্ববিদ্যালয়ের অধীনে প্রবেশিকা পরীক্ষার কেন্দ্র হিসেবে স্বীকৃতি পায়। কান্দিরপাড়ের প্রাণকেন্দ্রে অবস্থিত ৫.৬৯ একরের মনোরম ক্যাম্পাসে লাল ইটের ঐতিহ্যবাহী ভবন, সমৃদ্ধ বিজ্ঞানাগার, কম্পিউটার ল্যাব এবং সুবিশাল খেলার মাঠ রয়েছে।
+        </p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+          <div class="p-4 rounded-xl bg-czs-card border border-white/5">
+            <h4 class="font-bold text-amber-400 text-sm mb-1">🌅 প্রভাতি শাখা (Morning Shift)</h4>
+            <p class="text-xs text-slate-300">সকাল ৭:০০ টা থেকে বেলা ১১:৩০ টা পর্যন্ত (পঞ্চম থেকে দশম শ্রেণি)। সুশৃঙ্খল শ্রেণি কার্যক্রম ও নিয়মিত অ্যাসেম্বলি।</p>
+          </div>
+          <div class="p-4 rounded-xl bg-czs-card border border-white/5">
+            <h4 class="font-bold text-sky-400 text-sm mb-1">☀️ দিবা শাখা (Day Shift)</h4>
+            <p class="text-xs text-slate-300">দুপুর ১২:০০ টা থেকে বিকাল ৪:৪৫ টা পর্যন্ত (পঞ্চম থেকে দশম শ্রেণি)। বিষয়ভিত্তিক শিক্ষক ও বিশেষ ল্যাব ক্লাস।</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notice Board Section -->
+  <section id="notice" class="py-16 px-4 sm:px-6 bg-czs-dark/40 border-y border-white/5">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
+        <div>
+          <span class="text-xs font-bold text-amber-400 tracking-wider uppercase">অফিশিয়াল সার্কুলার</span>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">ডিজিটাল নোটিশ বোর্ড</h3>
+        </div>
+        <div class="flex items-center gap-2">
+          <button class="px-3 py-1.5 rounded-lg bg-amber-500 text-black text-xs font-bold shadow">সকল নোটিশ</button>
+          <button class="px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 text-xs font-semibold">পরীক্ষা</button>
+          <button class="px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 text-xs font-semibold">ভর্তি</button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Notice 1 -->
+        <div class="glass-card p-5 rounded-2xl flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs mb-3">
+              <span class="px-2.5 py-0.5 rounded-md bg-amber-500/20 text-amber-300 font-bold border border-amber-500/30">পরীক্ষা ২০২৬</span>
+              <span class="text-slate-400">২১ নভেম্বর, ২০২৬</span>
+            </div>
+            <h4 class="font-bold text-base text-white mb-2 leading-snug hover:text-amber-400 transition cursor-pointer">
+              নবম ও দশম শ্রেণির রসায়ন ও বিজ্ঞান বিষয়ের চূড়ান্ত মূল্যায়ন নির্দেশিকা
+            </h4>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              আগামী রবিবার অনুষ্ঠিতব্য রসায়ন পরীক্ষার সংশোধিত সময়সূচি এবং ব্যবহারিক খাতা জমাদানের বিস্তারিত নিয়মাবলী।
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/10 flex items-center justify-between">
+            <span class="text-[11px] text-slate-400">PDF • ১.২ MB</span>
+            <button onclick="alert('নোটিশ ডাউনলোড সম্পন্ন হয়েছে!')" class="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1">
+              ডাউনলোড 📥
+            </button>
+          </div>
+        </div>
+
+        <!-- Notice 2 -->
+        <div class="glass-card p-5 rounded-2xl flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs mb-3">
+              <span class="px-2.5 py-0.5 rounded-md bg-emerald-500/20 text-emerald-300 font-bold border border-emerald-500/30">ভর্তি সার্কুলার</span>
+              <span class="text-slate-400">১৮ নভেম্বর, ২০২৬</span>
+            </div>
+            <h4 class="font-bold text-base text-white mb-2 leading-snug hover:text-amber-400 transition cursor-pointer">
+              ২০২৭ শিক্ষাবর্ষে ৫ম ও ৬ষ্ঠ শ্রেণিতে কেন্দ্রীয় লটারির মাধ্যমে ভর্তির আবেদন
+            </h4>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              টেলিটক অনলাইন পোর্টালের মাধ্যমে ভর্তি ফরম পূরণের নিয়ম ও কোটা সংক্রান্ত সরকারি নির্দেশিকা প্রকাশিত হয়েছে।
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/10 flex items-center justify-between">
+            <span class="text-[11px] text-slate-400">PDF • ৮৫০ KB</span>
+            <button onclick="alert('নোটিশ ডাউনলোড সম্পন্ন হয়েছে!')" class="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1">
+              ডাউনলোড 📥
+            </button>
+          </div>
+        </div>
+
+        <!-- Notice 3 -->
+        <div class="glass-card p-5 rounded-2xl flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs mb-3">
+              <span class="px-2.5 py-0.5 rounded-md bg-sky-500/20 text-sky-300 font-bold border border-sky-500/30">সহশিক্ষা</span>
+              <span class="text-slate-400">১৫ নভেম্বর, ২০২৬</span>
+            </div>
+            <h4 class="font-bold text-base text-white mb-2 leading-snug hover:text-amber-400 transition cursor-pointer">
+              জাতীয় স্কাউট জাম্বুরি ও বিজ্ঞান মেলা ২০২৬-এ অংশগ্রহণের জন্য দল গঠন
+            </h4>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              কুমিল্লা জিলা স্কুল বিজ্ঞান ক্লাবের সদস্যদের প্রজেক্ট প্রদর্শনী এবং স্কাউট ট্রুপের বাছাই পর্বের তারিখ ঘোষণা।
+            </p>
+          </div>
+          <div class="pt-3 border-t border-white/10 flex items-center justify-between">
+            <span class="text-[11px] text-slate-400">PDF • ৯৫০ KB</span>
+            <button onclick="alert('নোটিশ ডাউনলোড সম্পন্ন হয়েছে!')" class="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1">
+              ডাউনলোড 📥
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hall of Fame: Notable Alumni (গর্বিত প্রাক্তন ছাত্রবৃন্দ) -->
+  <section id="alumni" class="py-16 px-4 sm:px-6 max-w-7xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="text-xs font-bold text-amber-400 tracking-wider uppercase">ইতিহাসের অনন্য নক্ষত্র</span>
+      <h3 class="text-2xl sm:text-4xl font-extrabold text-white mt-1">গর্বিত প্রাক্তন শিক্ষার্থীবৃন্দ</h3>
+      <p class="text-xs sm:text-sm text-slate-400 mt-2">যাঁদের পদচিহ্নে আলোকিত হয়েছে বাংলাদেশ ও আন্তর্জাতিক অঙ্গন</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Alumni 1 -->
+      <div class="glass-card p-6 rounded-2xl text-center">
+        <div class="w-20 h-20 mx-auto rounded-full bg-slate-800 border-2 border-amber-500/30 flex items-center justify-center text-3xl mb-4 shadow-lg">
+          📜
+        </div>
+        <h4 class="font-bold text-white text-base">শহীদ ধীরেন্দ্রনাথ দত্ত</h4>
+        <p class="text-xs text-amber-400 font-semibold mb-2">ভাষা আন্দোলনের মহান অগ্রদূত</p>
+        <p class="text-[11px] text-slate-300 leading-relaxed">
+          ১৯৪৮ সালে গণপরিষদে বাংলাকে রাষ্ট্রভাষা করার ঐতিহাসিক দাবি উত্থাপনকারী ও ৭১-এর মহান শহীদ।
+        </p>
+      </div>
+
+      <!-- Alumni 2 -->
+      <div class="glass-card p-6 rounded-2xl text-center">
+        <div class="w-20 h-20 mx-auto rounded-full bg-slate-800 border-2 border-amber-500/30 flex items-center justify-center text-3xl mb-4 shadow-lg">
+          🎶
+        </div>
+        <h4 class="font-bold text-white text-base">শচীন দেব বর্মণ (এস. ডি. বর্মণ)</h4>
+        <p class="text-xs text-amber-400 font-semibold mb-2">কিংবদন্তি সঙ্গীতসাধক ও সুরকার</p>
+        <p class="text-[11px] text-slate-300 leading-relaxed">
+          উপমহাদেশের অমর সঙ্গীতজ্ঞ ও সুরস্রষ্টা, যিনি বিশ্ব দরবারে বাংলা লোকগানের সুরকে চিরস্মরণীয় করেছেন।
+        </p>
+      </div>
+
+      <!-- Alumni 3 -->
+      <div class="glass-card p-6 rounded-2xl text-center">
+        <div class="w-20 h-20 mx-auto rounded-full bg-slate-800 border-2 border-amber-500/30 flex items-center justify-center text-3xl mb-4 shadow-lg">
+          🇧🇩
+        </div>
+        <h4 class="font-bold text-white text-base">শিব নারায়ণ দাশ</h4>
+        <p class="text-xs text-amber-400 font-semibold mb-2">জাতীয় পতাকার প্রথম নকশাকার</p>
+        <p class="text-[11px] text-slate-300 leading-relaxed">
+          ১৯৭১ সালে মুক্তিযুদ্ধের প্রাক্কালে বাংলাদেশের প্রথম লাল-সবুজ মানচিত্রখচিত পতাকার ঐতিহাসিক ডিজাইনার।
+        </p>
+      </div>
+
+      <!-- Alumni 4 -->
+      <div class="glass-card p-6 rounded-2xl text-center">
+        <div class="w-20 h-20 mx-auto rounded-full bg-slate-800 border-2 border-amber-500/30 flex items-center justify-center text-3xl mb-4 shadow-lg">
+          ⚖️
+        </div>
+        <h4 class="font-bold text-white text-base">বিচারপতি মোস্তফা কামাল</h4>
+        <p class="text-xs text-amber-400 font-semibold mb-2">সাবেক প্রধান বিচারপতি</p>
+        <p class="text-[11px] text-slate-300 leading-relaxed">
+          বাংলাদেশ সুপ্রিম কোর্টের সাবেক প্রধান বিচারপতি ও প্রথিতযশা আইনবিদ।
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Digital Result Checker Modal/Widget -->
+  <section id="result-checker" class="py-16 px-4 sm:px-6 bg-gradient-to-b from-czs-navy via-czs-dark to-czs-navy border-t border-white/5">
+    <div class="max-w-3xl mx-auto glass-card p-8 rounded-3xl border border-amber-500/30 shadow-2xl">
+      <div class="text-center mb-6">
+        <span class="px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 font-bold text-xs border border-amber-500/30">
+          অনলাইন রেজাল্ট সিস্টেম
+        </span>
+        <h3 class="text-2xl font-black text-white mt-2">ডিজিটাল প্রগ্রেস ও রেজাল্ট কার্ড</h3>
+        <p class="text-xs text-slate-400">পরীক্ষার ফলাফল দেখতে রোল ও শ্রেণি দিয়ে সার্চ করুন</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">শ্রেণি</label>
+          <select id="resClass" class="w-full bg-czs-navy border border-white/10 rounded-xl px-3 py-2.5 text-xs text-white focus:outline-none focus:border-amber-400">
+            <option>৯ম শ্রেণি (Class 9)</option>
+            <option>১০ম শ্রেণি (Class 10)</option>
+            <option>৮ম শ্রেণি (Class 8)</option>
+            <option>৭ম শ্রেণি (Class 7)</option>
+            <option>৬ষ্ঠ শ্রেণি (Class 6)</option>
+            <option>৫ম শ্রেণি (Class 5)</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">শাখা / শিফট</label>
+          <select id="resShift" class="w-full bg-czs-navy border border-white/10 rounded-xl px-3 py-2.5 text-xs text-white focus:outline-none focus:border-amber-400">
+            <option>প্রভাতি শাখা (Morning)</option>
+            <option>দিবা শাখা (Day)</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">রোল নম্বর</label>
+          <input type="number" id="resRoll" placeholder="যেমন: ১০১" class="w-full bg-czs-navy border border-white/10 rounded-xl px-3 py-2.5 text-xs text-white focus:outline-none focus:border-amber-400">
+        </div>
+      </div>
+
+      <button onclick="checkResult()" class="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-extrabold text-sm py-3 rounded-xl shadow-lg shadow-amber-500/20 transition">
+        ফলাফল দেখুন ➔
+      </button>
+
+      <!-- Simulated Result Box -->
+      <div id="resultOutput" class="hidden mt-6 p-4 rounded-xl bg-czs-navy border border-emerald-500/30 text-xs">
+        <div class="flex items-center justify-between pb-2 border-b border-white/10 mb-2">
+          <span class="font-bold text-white text-sm">শিক্ষার্থীর নাম: মো. ঈশান (রোল: ১০)</span>
+          <span class="badge-gold px-2.5 py-0.5 rounded text-[10px]">GPA 5.00 (A+)</span>
+        </div>
+        <p class="text-slate-300">শাখা: নবম শ্রেণি (প্রভাতি) • বিষয়: রসায়ন, পদার্থ, গণিত, উচ্চতর গণিত</p>
+        <p class="text-emerald-400 font-semibold mt-1">অভিনন্দন! সার্বিক গ্রেড: A+ (মেধা স্থান: ১ম)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Co-curricular & Clubs -->
+  <section id="clubs" class="py-16 px-4 sm:px-6 max-w-7xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="text-xs font-bold text-sky-400 tracking-wider uppercase">মেধার পূর্ণাঙ্গ বিকাশ</span>
+      <h3 class="text-2xl sm:text-4xl font-extrabold text-white mt-1">সহশিক্ষা ও ক্লাব কার্যক্রম</h3>
+      <p class="text-xs sm:text-sm text-slate-400 mt-2">পাঠ্যবইয়ের পাশাপাশি বিজ্ঞান, বিতর্ক, খেলাধুলা ও সেবামূলক কাজে জাতীয় পর্যায়ে গৌরবময় পদার্পণ</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="glass-card p-6 rounded-2xl">
+        <div class="w-12 h-12 rounded-xl bg-sky-500/20 border border-sky-500/30 flex items-center justify-center text-2xl mb-4 text-sky-400">
+          🔬
+        </div>
+        <h4 class="font-bold text-white text-lg mb-2">সিজেডএস বিজ্ঞান ক্লাব (CZS Science Club)</h4>
+        <p class="text-xs text-slate-300 leading-relaxed">
+          জাতীয় বিজ্ঞান ও প্রযুক্তি সপ্তাহে নিয়মিত চ্যাম্পিয়ন। রোবটিক্স, গণিত অলিম্পিয়াড এবং মহাকাশ গবেষণার প্রাথমিক প্রজেক্ট তৈরি করে শিক্ষার্থীরা।
+        </p>
+      </div>
+
+      <div class="glass-card p-6 rounded-2xl">
+        <div class="w-12 h-12 rounded-xl bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-2xl mb-4 text-amber-400">
+          🗣️
+        </div>
+        <h4 class="font-bold text-white text-lg mb-2">জিলা স্কুল বিতর্ক পরিষদ (Debate Club)</h4>
+        <p class="text-xs text-slate-300 leading-relaxed">
+          যুক্তি ও বাগ্মীতার তীর্থভূমি। বিটিভি জাতীয় স্কুল বিতর্ক ও বিভিন্ন আন্তঃস্কুল প্রতিযোগিতায় অসংখ্য ট্রফি বিজয়ী ঐতিহ্যবাহী ক্লাব।
+        </p>
+      </div>
+
+      <div class="glass-card p-6 rounded-2xl">
+        <div class="w-12 h-12 rounded-xl bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-2xl mb-4 text-emerald-400">
+          ⛺
+        </div>
+        <h4 class="font-bold text-white text-lg mb-2">বাংলাদেশ স্কাউটস ও বিএনসিসি প্ল্যাটুন</h4>
+        <p class="text-xs text-slate-300 leading-relaxed">
+          নেতৃত্ব, শৃঙ্খলা ও দুর্যোগে মানুষের পাশে দাঁড়ানোর দীক্ষা। প্রতি বছর জাতীয় ক্যাম্পুরিতে অংশগ্রহণ এবং প্রেসিডেন্স স্কাউট অ্যাওয়ার্ড অর্জন।
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer & Contact -->
+  <footer id="contact" class="bg-czs-navy border-t border-white/10 pt-16 pb-12 px-4 sm:px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+      <!-- School Info -->
+      <div class="md:col-span-2 space-y-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center font-black text-black">
+            CZS
+          </div>
+          <div>
+            <h4 class="font-bold text-lg text-white">কুমিল্লা জিলা স্কুল</h4>
+            <p class="text-[11px] text-amber-400">COMILLA ZILLA SCHOOL • EIIN: 105770</p>
+          </div>
+        </div>
+        <p class="text-xs text-slate-400 max-w-md leading-relaxed">
+          কান্দিরপাড়, কুমিল্লা সদর, কুমিল্লা-৩৫০০, চট্টগ্রাম বিভাগ, বাংলাদেশ। ১৮৩৭ সাল থেকে অবিরাম জ্ঞানের আলো ছড়িয়ে চলা গৌরবময় শিক্ষাঙ্গন।
+        </p>
+        <div class="flex items-center gap-3 text-xs text-slate-300">
+          <span>📞 ফোন: 081-65432</span>
+          <span>•</span>
+          <span>📧 ইমেইল: info@czs.edu.bd</span>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h5 class="font-bold text-sm text-white mb-3">গুরুত্বপূর্ণ লিঙ্ক</h5>
+        <ul class="space-y-2 text-xs text-slate-400">
+          <li><a href="http://www.czs.edu.bd" target="_blank" class="hover:text-amber-400">অফিশিয়াল পোর্টাল (czs.edu.bd)</a></li>
+          <li><a href="https://comillaboard.portal.gov.bd" target="_blank" class="hover:text-amber-400">কুমিল্লা শিক্ষা বোর্ড</a></li>
+          <li><a href="https://dshe.gov.bd" target="_blank" class="hover:text-amber-400">মাধ্যমিক ও উচ্চশিক্ষা অধিদপ্তর</a></li>
+          <li><a href="https://gsa.teletalk.com.bd" target="_blank" class="hover:text-amber-400">অনলাইন ভর্তি পোর্টাল</a></li>
+        </ul>
+      </div>
+
+      <!-- Academic Hours -->
+      <div>
+        <h5 class="font-bold text-sm text-white mb-3">কার্যক্রমের সময়সূচি</h5>
+        <div class="space-y-2 text-xs text-slate-400">
+          <p><strong class="text-slate-200">রবিবার - বৃহস্পতিবার:</strong></p>
+          <p>প্রভাতি: সকাল ৭:০০ - বেলা ১১:৩০</p>
+          <p>দিবা: দুপুর ১২:০০ - বিকাল ৪:৪৫</p>
+          <p class="text-amber-400 font-semibold mt-2">শুক্রবার ও শনিবার: সাপ্তাহিক ছুটি</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-2">
+      <p>© ২০২৬ কুমিল্লা জিলা স্কুল • সকল অধিকার সংরক্ষিত।</p>
+      <p class="text-[11px]">প্রযুক্তি ও ডিজিটাল প্ল্যাটফর্ম সহযোগিতায়: Sovereign Agency Engine (ঈশানের তত্ত্বাবধানে তৈরি)</p>
+    </div>
+  </footer>
+
+  <script>
+    function checkResult() {
+      const roll = document.getElementById('resRoll').value;
+      const out = document.getElementById('resultOutput');
+      if (!roll) {
+        alert('দয়া করে আপনার রোল নম্বরটি লিখুন!');
+        return;
+      }
+      out.classList.remove('hidden');
+      out.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
